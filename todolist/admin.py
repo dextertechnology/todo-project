@@ -1,3 +1,5 @@
 from django.contrib import admin
+from todolist.models import TodoList, Tags
 
-# Register your models here.
+admin.site.register(TodoList)
+admin.site.register(Tags)

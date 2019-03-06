@@ -23,13 +23,13 @@ class TodoList(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_done = models.BooleanField(default=False)
-    completed_at = models.DateTimeField()
+    completed_at = models.DateTimeField(blank=True, null=True)
     priority = models.CharField(
         max_length=3,
         choices=PRIORITY_CHOICES,
         default=TYT,
     )
-    is_active = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
     required_revision = models.BooleanField(default=False)
     
     def __str__(self):
