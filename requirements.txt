@@ -1,4 +1,0 @@
-Django==2.1.7
-django-tinymce==2.8.0
-djangorestframework==3.9.2
-pytz==2018.9
